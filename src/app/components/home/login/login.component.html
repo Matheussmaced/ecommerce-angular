@@ -1,0 +1,24 @@
+
+<div class="containerMaster">
+  <div class="containerLogin">
+    <h1>Faça o seu login</h1>
+
+    <p class="nameInput">Seu e-mail</p>
+    <app-input-login typeButton="text" [(ngModel)]="email"></app-input-login>
+
+    <p class="nameInput">Sua senha</p>
+    <app-input-login typeButton="password" [(ngModel)]="password"></app-input-login>
+
+    <span class="nameInput">
+      <input type="checkbox" (click)="switchCheck()">
+      Lembrar-me
+    </span>
+
+    <app-button-submit (click)="ClickTestForm()"></app-button-submit>
+
+    <div class="createAccount">
+      <p>Não tem conta?</p>
+      <span>Crie uma</span>
+    </div>
+  </div>
+</div>
