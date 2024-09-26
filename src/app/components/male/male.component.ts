@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './male.component.css'
 })
 export class MaleComponent {
-
-
-  mouseOverFunction(){
-    console.log("Passou o mouse")
-  }
 }

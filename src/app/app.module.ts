@@ -16,6 +16,7 @@ import { FeminineComponent } from './components/feminine/feminine.component';
 import { KidsComponent } from './components/kids/kids.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ButtonsSizesComponent } from './components/buttons-sizes/buttons-sizes.component';
+import { ProductComponent } from './components/product/product.component';
 
 
 
@@ -36,7 +37,8 @@ const routes: Routes = [
     ButtonNavBarComponent,
     RegisterComponent,
     ButtonsSizesComponent,
-    MaleComponent
+    MaleComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+.containerMaster{
+  background-color: black;
+  height: 100%;
+
+  img{
+    max-width: 100%;
+  }
+}
+
+.buttonsSizes{
+  position: absolute;
+  z-index: 1;
+  bottom: 2.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.containerShirts{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 0.5rem;
+
+  img{
+    width: 17rem;
+    height: 25rem;
+    cursor: pointer;
+
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  img:hover{
+    transform: scale(1.02);
+  }
+}
+
+.shirts{
+  position: relative; /* Define como referência para o elemento absoluto */
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  span {
+    margin-top: 0.4rem;
+  }
+}
+
+.value{
+  text-align: left;
+  margin-top: 0.4rem;
+
+  color: aquamarine;
+
+}
