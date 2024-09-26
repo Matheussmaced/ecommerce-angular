@@ -10,10 +10,17 @@
   color: white;
 }
 
+
 .logo{
   display: flex;
   align-items: center;
   gap: 0.3rem;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logo:hover{
+  transform: scale(1.1);
 }
 
 .logoAndNavBarContainer{

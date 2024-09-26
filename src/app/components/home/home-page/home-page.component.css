@@ -1,0 +1,9 @@
+.containerMaster{
+  background-color: black;
+  height: 100vh;
+
+  img{
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
