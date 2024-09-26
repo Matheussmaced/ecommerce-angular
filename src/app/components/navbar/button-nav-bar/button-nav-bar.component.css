@@ -1,0 +1,15 @@
+button{
+  padding: 0.5rem 0.9rem;
+  border: aquamarine 1.5px solid;
+  border-radius: 6px;
+  color: rgb(187, 187, 187);
+
+  cursor: pointer;
+
+  background-color: transparent;
+
+  transition: 0.5s;
+}
+button:hover{
+  transform: scale(1.1);
+}

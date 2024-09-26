@@ -1,0 +1,40 @@
+.containerMaster{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+
+  padding: 1rem 3rem;
+  background-color: rgb(24, 24, 24);
+
+  color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logoAndNavBarContainer{
+  display: flex;
+  align-items: center;
+
+  gap: 4rem;
+}
+
+.navBar{
+  display: flex;
+  gap: 1rem;
+
+  a{
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+  }
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

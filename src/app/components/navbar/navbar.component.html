@@ -1,0 +1,28 @@
+<div class="containerMaster">
+  <div class="logoAndNavBarContainer">
+    <div class="logo">
+      <lucide-angular name="shirt"></lucide-angular>
+      <span>T-SHOPPING</span>
+    </div>
+
+    <nav class="navBar">
+      <li>
+        <a routerLink="/novidades" routerLinkActive="active">Novidades</a>
+      </li>
+      <li>
+       <a routerLink="/masculino">Masculino</a>
+      </li>
+      <li>
+        <a routerLink="/feminino">Feminino</a>
+      </li>
+      <li>
+        <a routerLink="/kids">Kids</a>
+      </li>
+    </nav>
+  </div>
+
+  <div class="buttonContainer">
+    <app-button-nav-bar nameButton="Login" nameRouter="/login"></app-button-nav-bar>
+    <app-button-nav-bar nameButton="Registrar" nameRouter="/register"></app-button-nav-bar>
+  </div>
+</div>

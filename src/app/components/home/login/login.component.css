@@ -1,6 +1,7 @@
 .containerMaster{
   background-color: black;
   height: 100vh;
+  padding-top: 1rem;
 }
 .containerLogin{
   background-color: rgb(24, 24, 24);
@@ -11,12 +12,9 @@
 
   width: 25rem;
   height: 24rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 
-  position: absolute;
-  left: 50%;
-  bottom: 40%;
-  transform: translateX(-50%);
+
 
   padding: 1.3rem 3rem;
   text-align: center;
