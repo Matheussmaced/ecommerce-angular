@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MaleComponent {
 
+
+  mouseOverFunction(){
+    console.log("Passou o mouse")
+  }
 }

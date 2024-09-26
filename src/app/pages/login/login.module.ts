@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     LoginComponent,
     InputLoginComponent,
-    ButtonSubmitComponent
+    ButtonSubmitComponent,
   ],
   imports: [
     CommonModule,

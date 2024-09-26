@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './pages/login/login.module';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import {  LucideAngularModule, Shirt } from 'lucide-angular';
+import {  LucideAngularModule, Shirt, ShoppingCart } from 'lucide-angular';
 import { ButtonNavBarComponent } from './components/navbar/button-nav-bar/button-nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/home/login/login.component';
@@ -15,6 +15,9 @@ import { MaleComponent } from './components/male/male.component';
 import { FeminineComponent } from './components/feminine/feminine.component';
 import { KidsComponent } from './components/kids/kids.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ButtonsSizesComponent } from './components/buttons-sizes/buttons-sizes.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -32,13 +35,15 @@ const routes: Routes = [
     NavbarComponent,
     ButtonNavBarComponent,
     RegisterComponent,
+    ButtonsSizesComponent,
+    MaleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     LoginModule,
-    LucideAngularModule.pick({ Shirt })
+    LucideAngularModule.pick({ Shirt, ShoppingCart })
   ],
   providers: [],
   bootstrap: [AppComponent]

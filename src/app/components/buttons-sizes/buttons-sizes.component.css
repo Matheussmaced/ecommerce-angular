@@ -1,0 +1,48 @@
+.containerMaster{
+  background-color: white;
+  min-width: 16rem;
+}
+
+.containerButtons{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  justify-content: center;
+
+
+  button{
+    padding: 0.4rem;
+    width: 3rem;
+    background-color: transparent;
+    border: solid 1px transparent;
+    margin-top: 0.3rem;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: black;
+    transition: 0.3s;
+  }
+  button:hover{
+    border: solid 1px aquamarine;
+  }
+}
+
+.finishContainer{
+  button{
+    padding: 0.4rem 0.8rem;
+    background-color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+
+    margin: 0.5rem auto;
+
+    gap: 0.4rem;
+    width: 90%;
+    cursor: pointer;
+  }
+}

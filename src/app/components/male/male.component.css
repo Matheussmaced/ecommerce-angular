@@ -7,6 +7,14 @@
   }
 }
 
+.buttonsSizes{
+  position: absolute;
+  z-index: 1;
+  bottom: 2.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .titleContainer{
   color: white;
   font-size: 1.2rem;
@@ -46,12 +54,12 @@
 }
 
 .shirts{
+  position: relative; /* Define como referência para o elemento absoluto */
   display: flex;
   flex-direction: column;
-
   color: white;
 
-  span{
+  span {
     margin-top: 0.4rem;
   }
 }
@@ -61,4 +69,5 @@
   margin-top: 0.4rem;
 
   color: aquamarine;
+
 }
