@@ -1,12 +1,12 @@
 <div class="containerMaster">
   <div class="containerButtons">
-    <button>P</button>
-    <button>M</button>
-    <button>G</button>
-    <button>GG</button>
+    <button (click)="clickP()">P</button>
+    <button (click)="clickM()">M</button>
+    <button (click)="clickG()">G</button>
+    <button (click)="clickGG()">GG</button>
   </div>
   <div class="finishContainer">
-    <button>
+    <button (click)="finishBuy()">
       <lucide-icon name="shopping-cart"></lucide-icon>
       COMPRAR
     </button>

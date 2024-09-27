@@ -1,6 +1,12 @@
 .containerMaster{
   background-color: white;
   min-width: 16rem;
+  position: absolute;
+
+  z-index: 1;
+  top: 19rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .containerButtons{

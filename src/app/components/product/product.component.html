@@ -1,8 +1,14 @@
 <div class="containerMaster">
   <div class="containerShirts">
-    <div class="shirts" (mouseover)="mouseOverFunction()">
+    <div class="shirts" (mouseover)="activeDiv()" (mouseleave)="deactivateDiv()">
       <img src= {{nameImage}} alt="">
-      <app-buttons-sizes class="buttonsSizes"></app-buttons-sizes>
+      <app-buttons-sizes
+        *ngIf="isEnableBlock"
+        [nameImage]="nameImage"
+        [productName]="productName"
+        [value]="value"
+        (buy)="onBuy($event)">
+      </app-buttons-sizes>
       <span>  {{productName}} </span>
       <span class="value"> {{value}} </span>
     </div>
