@@ -7,13 +7,6 @@
   }
 }
 
-.buttonsSizes{
-  position: absolute;
-  z-index: 1;
-  bottom: 2.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .titleContainer{
   color: white;
@@ -40,6 +33,12 @@
   justify-content: center;
   gap: 0.5rem;
 
+  max-width: 60rem;
+
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+
   img{
     width: 17rem;
     height: 25rem;
@@ -54,20 +53,16 @@
 }
 
 .shirts{
-  position: relative; /* Define como referência para o elemento absoluto */
-  display: flex;
-  flex-direction: column;
-  color: white;
-
-  span {
-    margin-top: 0.4rem;
-  }
+  width: calc(25% - 0.5rem);
 }
 
-.value{
-  text-align: left;
-  margin-top: 0.4rem;
-
-  color: aquamarine;
-
+@media (max-width: 960px) {
+  .shirts {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .shirts {
+    width: 100%;
+  }
 }

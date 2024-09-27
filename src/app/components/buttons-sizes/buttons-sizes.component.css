@@ -1,7 +1,8 @@
 .containerMaster{
   background-color: white;
-  min-width: 16rem;
+
   position: absolute;
+  max-width: 60rem;
 
   z-index: 1;
   top: 19rem;

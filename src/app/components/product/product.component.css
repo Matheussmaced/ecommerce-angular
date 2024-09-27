@@ -4,6 +4,8 @@
   img{
     max-width: 100%;
   }
+
+  margin-bottom: 2rem;
 }
 
 .buttonsSizes{
@@ -42,6 +44,11 @@
 
   span {
     margin-top: 0.4rem;
+  }
+
+  .productSpan{
+    height: 2rem;
+    margin-top: 1rem;
   }
 }
 
