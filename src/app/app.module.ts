@@ -17,6 +17,9 @@ import { KidsComponent } from './components/kids/kids.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ButtonsSizesComponent } from './components/buttons-sizes/buttons-sizes.component';
 import { ProductComponent } from './components/product/product.component';
+import { ButtonRegisterComponent } from './components/register/button-register/button-register.component';
+import { InputRegisterComponent } from './components/register/input-register/input-register.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -38,14 +41,19 @@ const routes: Routes = [
     RegisterComponent,
     ButtonsSizesComponent,
     MaleComponent,
-    ProductComponent
+    ProductComponent,
+    RegisterComponent,
+    ButtonRegisterComponent,
+    InputRegisterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     LoginModule,
-    LucideAngularModule.pick({ Shirt, ShoppingCart })
+    LucideAngularModule.pick({ Shirt, ShoppingCart }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

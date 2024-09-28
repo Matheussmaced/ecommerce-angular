@@ -1,1 +1,24 @@
-<p>register works!</p>
+<div class="containerMaster">
+  <div class="containerLogin">
+    <h1>Cadastrar</h1>
+
+    <p class="nameInput">Seu e-mail</p>
+    <app-input-register typeButton="text" [(ngModel)]="email"></app-input-register>
+
+    <p class="nameInput">Sua senha</p>
+    <app-input-register typeButton="password" [(ngModel)]="password"></app-input-register>
+
+    <p class="nameInput">CPF</p>
+    <app-input-register typeButton="number" [(ngModel)]="cpf"></app-input-register>
+
+    <p class="nameInput">CEP</p>
+    <app-input-register typeButton="number" [(ngModel)]="cep"></app-input-register>
+
+    <app-button-register (click)="ClickTestForm()"></app-button-register>
+
+    <div class="createAccount">
+      <p>Já tem um conta?</p>
+      <span routerLink="/login" >Faça login</span>
+    </div>
+  </div>
+</div>

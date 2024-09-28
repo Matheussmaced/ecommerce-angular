@@ -1,0 +1,15 @@
+input{
+  padding: 0.5rem 2rem;
+  background-color: aquamarine;
+
+  color: rgb(24, 24, 24);
+  font-weight: bolder;
+  border: none;
+  border-radius: 6px;
+
+  transition: 0.5s;
+  cursor: pointer;
+}
+input:hover{
+  transform: scale(1.1);
+}
