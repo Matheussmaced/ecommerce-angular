@@ -5,3 +5,10 @@ img{
 .body{
   background-color: black;
 }
+
+.navBar{
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+}

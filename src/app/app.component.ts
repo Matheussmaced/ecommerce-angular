@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -15,4 +15,5 @@ export class AppComponent {
   isLoginOrRegister() {
     return this.router.url.includes('/login') || this.router.url.includes('/register')
   }
+
 }

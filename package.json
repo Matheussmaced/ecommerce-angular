@@ -21,6 +21,7 @@
     "ecommerce-frontend": "file:",
     "lucide-angular": "^0.446.0",
     "rxjs": "~7.8.0",
+    "smooth-scrollbar": "^8.8.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
   },

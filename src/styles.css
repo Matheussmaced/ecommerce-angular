@@ -5,3 +5,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html ::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: aquamarine;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border: none;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #55b5a1;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(22, 255, 177) #f1f1f1;
+}
+
