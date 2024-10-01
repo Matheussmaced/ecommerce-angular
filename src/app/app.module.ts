@@ -49,8 +49,8 @@ const routes: Routes = [
     InputRegisterComponent,
     FooterComponent,
     CardsComponent,
-    KidsComponent
-
+    KidsComponent,
+    FeminineComponent
   ],
   imports: [
     BrowserModule,
