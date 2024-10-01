@@ -1,10 +1,10 @@
 <div class="body">
   <app-navbar></app-navbar>
 
-  <img src="/background-home.jpg" alt="background">
+  <img *ngIf="!isLoginOrRegister()" src="/background-home.jpg" alt="background">
 
   <router-outlet></router-outlet>
-  <div>
+  <div *ngIf="!isLoginOrRegister()">
     <app-footer></app-footer>
   </div>
 </div>

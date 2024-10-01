@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ecommerce-frontend';
+
+  constructor(private router: Router){}
+
+  isLoginOrRegister() {
+    return this.router.url.includes('/login') || this.router.url.includes('/register')
+  }
 }
