@@ -15,5 +15,4 @@ export class AppComponent {
   isLoginOrRegister() {
     return this.router.url.includes('/login') || this.router.url.includes('/register')
   }
-
 }

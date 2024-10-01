@@ -22,6 +22,7 @@ import { InputRegisterComponent } from './components/register/input-register/inp
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardsComponent } from './components/footer/cards/cards.component';
+import { NavbarCategoryComponent } from './components/home/home-page/navbar-category/navbar-category.component';
 
 
 
@@ -50,7 +51,9 @@ const routes: Routes = [
     FooterComponent,
     CardsComponent,
     KidsComponent,
-    FeminineComponent
+    FeminineComponent,
+    NavbarCategoryComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

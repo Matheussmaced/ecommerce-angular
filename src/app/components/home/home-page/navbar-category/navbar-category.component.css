@@ -1,0 +1,17 @@
+.bannerContainer{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+
+  img{
+    width: 20%;
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: 0.4s;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+}

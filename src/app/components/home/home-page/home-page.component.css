@@ -1,8 +1,62 @@
 .containerMaster{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
   background-color: black;
-  height: 100vh;
+  color: white;
+  margin-top: 4rem;
+
+  h2{
+    margin-left: 2rem;
+    text-align: center;
+    span{
+      color: aquamarine;
+    }
+  }
 
   img{
     max-width: 100%;
+  }
+}
+
+.containerShirts{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 0.5rem;
+
+  max-width: 70rem;
+
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+
+  img{
+    width: 17rem;
+    height: 25rem;
+    cursor: pointer;
+
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  img:hover{
+    transform: scale(1.02);
+  }
+}
+
+.shirts{
+  width: calc(25% - 0.5rem);
+}
+
+@media (max-width: 960px) {
+  .shirts {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .shirts {
+    width: 100%;
   }
 }
