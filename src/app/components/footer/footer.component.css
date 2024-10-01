@@ -1,0 +1,48 @@
+.containerMaster{
+  color: white;
+
+
+  h4{
+    margin: 5rem 0 1rem;
+    font-size: 1.5rem;
+
+    color: aquamarine;
+  }
+  p{
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(165, 165, 165);
+  }
+
+  text-align: center;
+}
+
+.cardsContainer{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+
+  background-color: rgb(10, 10, 10);
+  border-radius: 6px;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  background-color: rgb(19, 19, 19);
+
+  gap: 0.5rem;
+
+  a{
+    color: aquamarine;
+    font-size: 1.1rem;
+  }
+}

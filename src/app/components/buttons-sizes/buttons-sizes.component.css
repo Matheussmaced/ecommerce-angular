@@ -2,7 +2,7 @@
   background-color: white;
 
   position: absolute;
-  max-width: 60rem;
+  width: 100%;
 
   z-index: 1;
   top: 19rem;

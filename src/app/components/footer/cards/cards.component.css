@@ -1,0 +1,22 @@
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  gap: 0.3rem;
+  cursor: pointer;
+
+  transition: 0.5s;
+
+  span{
+    color: rgb(99, 99, 99);
+  }
+}
+.cardContainer:hover{
+  transform: scale(1.1);
+}
+
+.icons{
+  color: aquamarine;
+}
