@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-button-nav-bar',
-  template: `
-    <button (click)="navigate()">{{ nameButton }}</button>
+  template: `<button (click)="navigate()"> <lucide-icon name="{{nameButton}}" class="icon"></lucide-icon> </button>
   `,
   styleUrl: './button-nav-bar.component.css'
 })

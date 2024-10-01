@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './pages/login/login.module';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import {  CircleDollarSign, CreditCard, LucideAngularModule, Phone, RotateCcw, Shirt, ShoppingCart, Store } from 'lucide-angular';
+import {  CircleDollarSign, CircleUserRound, CreditCard, LucideAngularModule, Phone, RotateCcw, Shirt, ShoppingCart, Store } from 'lucide-angular';
 import { ButtonNavBarComponent } from './components/navbar/button-nav-bar/button-nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/home/login/login.component';
@@ -56,7 +56,7 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes),
     LoginModule,
-    LucideAngularModule.pick({ Shirt, ShoppingCart, CreditCard, CircleDollarSign, Store, RotateCcw, Phone }),
+    LucideAngularModule.pick({ Shirt, ShoppingCart, CreditCard, CircleDollarSign, Store, RotateCcw, Phone, CircleUserRound}),
     FormsModule
   ],
   providers: [],
