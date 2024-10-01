@@ -7,7 +7,12 @@
         [nameImage]="nameImage"
         [productName]="productName"
         [value]="value"
-        (buy)="onBuy($event)">
+        (buy)="onBuy($event)"
+        button1=" {{button1Value}} "
+        button2=" {{button2Value}} "
+        button3=" {{button3Value}} "
+        button4=" {{button4Value}} "
+        >
       </app-buttons-sizes>
       <span class="productSpan">  {{productName}} </span>
       <span class="value"> {{value}} </span>

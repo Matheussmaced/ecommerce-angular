@@ -49,6 +49,7 @@ const routes: Routes = [
     InputRegisterComponent,
     FooterComponent,
     CardsComponent,
+    KidsComponent
 
   ],
   imports: [

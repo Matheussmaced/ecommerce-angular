@@ -11,6 +11,11 @@ export class ProductComponent {
   @Input() value:string = ""
   @Output() buy = new EventEmitter<any>()
 
+  @Input() button1Value:string = ""
+  @Input() button2Value:string = ""
+  @Input() button3Value:string = ""
+  @Input() button4Value:string = ""
+
   isEnableBlock:boolean = false
 
   activeDiv(){

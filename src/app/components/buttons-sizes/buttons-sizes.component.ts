@@ -9,21 +9,27 @@ export class ButtonsSizesComponent {
   @Input() nameImage:string = ""
   @Input() productName:string = ""
   @Input() value:string = ""
+
+  @Input() button1:string = ""
+  @Input() button2:string = ""
+  @Input() button3:string = ""
+  @Input() button4:string = ""
+
   @Output() buy = new EventEmitter<any>()
 
   size:string = ""
 
-  clickP(){
-    this.size = "P"
+  clickButton1(){
+    this.size = this.button1
   }
-  clickM(){
-    this.size = "M"
+  clickButton2(){
+    this.size = this.button2
   }
-  clickG(){
-    this.size = "G"
+  clickButton3(){
+    this.size = this.button3
   }
-  clickGG(){
-    this.size = "GG"
+  clickButton4(){
+    this.size = this.button4
   }
 
   finishBuy() {
