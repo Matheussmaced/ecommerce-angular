@@ -53,7 +53,8 @@ const routes: Routes = [
     KidsComponent,
     FeminineComponent,
     NavbarCategoryComponent,
-    HomePageComponent
+    HomePageComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
