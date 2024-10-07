@@ -23,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardsComponent } from './components/footer/cards/cards.component';
 import { NavbarCategoryComponent } from './components/home/home-page/navbar-category/navbar-category.component';
+import { ShirtPageComponent } from './components/shirt-page/shirt-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,6 +32,7 @@ const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'novidades', component: NewsComponent },
+  { path: 'masculino/:id', component: MaleComponent },
   { path: 'masculino', component: MaleComponent },
   { path: 'feminino', component: FeminineComponent },
   { path: 'kids', component: KidsComponent },
@@ -54,7 +57,8 @@ const routes: Routes = [
     FeminineComponent,
     NavbarCategoryComponent,
     HomePageComponent,
-    NewsComponent
+    NewsComponent,
+    ShirtPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     LoginModule,
     LucideAngularModule.pick({ Shirt, ShoppingCart, CreditCard, CircleDollarSign, Store, RotateCcw, Phone, CircleUserRound}),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
