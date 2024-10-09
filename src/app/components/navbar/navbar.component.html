@@ -7,16 +7,16 @@
 
     <nav class="navBar">
       <li>
-        <a routerLink="/novidades" routerLinkActive="active">Novidades</a>
+        <a [routerLink]="['/novidades', clientId]" routerLinkActive="active">Novidades</a>
       </li>
       <li>
-       <a routerLink="/masculino">Masculino</a>
+       <a [routerLink]="['/masculino', clientId]">Masculino</a>
       </li>
       <li>
-        <a routerLink="/feminino">Feminino</a>
+        <a [routerLink]="['/feminino', clientId]">Feminino</a>
       </li>
       <li>
-        <a routerLink="/kids">Kids</a>
+        <a [routerLink]="['/kids', clientId]">Kids</a>
       </li>
     </nav>
   </div>

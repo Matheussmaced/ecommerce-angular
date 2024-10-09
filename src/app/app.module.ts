@@ -25,18 +25,24 @@ import { CardsComponent } from './components/footer/cards/cards.component';
 import { NavbarCategoryComponent } from './components/home/home-page/navbar-category/navbar-category.component';
 import { ShirtPageComponent } from './components/shirt-page/shirt-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientIdGuard } from './client-id.guard';
 
 
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: '', component: HomePageComponent, canActivate: [ClientIdGuard] },
   { path: 'login', component: LoginComponent },
-  { path: 'novidades', component: NewsComponent },
-  { path: 'masculino/:id', component: MaleComponent },
-  { path: 'masculino', component: MaleComponent },
-  { path: 'feminino', component: FeminineComponent },
-  { path: 'kids', component: KidsComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'novidades', component: NewsComponent, canActivate: [ClientIdGuard] },
+  { path: 'masculino', component: MaleComponent, canActivate: [ClientIdGuard] },
+  { path: 'feminino', component: FeminineComponent, canActivate: [ClientIdGuard] },
+  { path: 'kids', component: KidsComponent, canActivate: [ClientIdGuard] },
+  { path: 'register', component: RegisterComponent, canActivate: [ClientIdGuard] },
+
+  { path: ':clientId', component: HomePageComponent, canActivate: [ClientIdGuard] },
+  { path: 'novidades/:clientId', component: NewsComponent, canActivate: [ClientIdGuard] },
+  { path: 'masculino/:clientId', component: MaleComponent, canActivate: [ClientIdGuard] },
+  { path: 'feminino/:clientId', component: FeminineComponent, canActivate: [ClientIdGuard] },
+  { path: 'kids/:clientId', component: KidsComponent, canActivate: [ClientIdGuard] },
 ];
 @NgModule({
   declarations: [

@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { environment } from "../../environments/environment.development";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs";
+import { Router } from "@angular/router";
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { map } from "rxjs";
 export class UserService{
   baseUrl: string = environment.apiUrl;
 
-  constructor(private httpClient: HttpClient){}
+  constructor(private httpClient: HttpClient, private router: Router){}
 
   loginUser(email: string, password: string){
     return this.httpClient.get<any[]>(this.baseUrl + "users/all").pipe(
@@ -23,8 +24,10 @@ export class UserService{
         if(!user){
           return null
         }
+        localStorage.setItem('clientId', user.clientId);
+        this.router.navigate([`/novidades/${user.clientId}`])
 
-        return console.log(user.name)
+        return user
       })
     )
   }
