@@ -26,6 +26,7 @@ import { NavbarCategoryComponent } from './components/home/home-page/navbar-cate
 import { ShirtPageComponent } from './components/shirt-page/shirt-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientIdGuard } from './client-id.guard';
+import { CookieService } from 'ngx-cookie-service';
 
 
 
@@ -75,7 +76,7 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

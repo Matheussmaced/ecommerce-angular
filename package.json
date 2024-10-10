@@ -20,6 +20,7 @@
     "@angular/router": "^18.2.0",
     "ecommerce-frontend": "file:",
     "lucide-angular": "^0.446.0",
+    "ngx-cookie-service": "^18.0.0",
     "rxjs": "~7.8.0",
     "smooth-scrollbar": "^8.8.4",
     "tslib": "^2.3.0",

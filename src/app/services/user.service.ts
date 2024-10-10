@@ -3,6 +3,8 @@ import { environment } from "../../environments/environment.development";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs";
 import { Router } from "@angular/router";
+import { CookieService } from 'ngx-cookie-service';
+import { ClientIdService } from "./clienteIdService";
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +12,11 @@ import { Router } from "@angular/router";
 export class UserService{
   baseUrl: string = environment.apiUrl;
 
-  constructor(private httpClient: HttpClient, private router: Router){}
+  constructor(private httpClient: HttpClient,
+    private router: Router,
+    private cookieService: CookieService,
+    private clientIdService: ClientIdService
+  ){}
 
   loginUser(email: string, password: string){
     return this.httpClient.get<any[]>(this.baseUrl + "users/all").pipe(
@@ -24,7 +30,15 @@ export class UserService{
         if(!user){
           return null
         }
+
+        this.cookieService.delete('clientId');
+
+        localStorage.removeItem('clientId');
         localStorage.setItem('clientId', user.clientId);
+
+        this.cookieService.set('clientId', user.clientId);
+        this.clientIdService.setClientId(user.clientId);
+
         this.router.navigate([`/novidades/${user.clientId}`])
 
         return user
