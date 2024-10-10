@@ -1,6 +1,7 @@
-import { Injectable } from "@angular/core";
+import { Injectable, OnInit } from "@angular/core";
 import { environment } from "../../environments/environment.development";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { ActivatedRoute } from "@angular/router";
 
 @Injectable({
   providedIn: 'root',
@@ -10,12 +11,13 @@ export class ProductService{
 
   constructor(private httpClient: HttpClient){}
 
-  addingProductCart( productDetails: any ){
+
+  addingProductCart( productDetails: any, clientId: string | null){
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
     })
 
-    return this.httpClient.post<any[]>(this.baseUrl + "product/038a604d-0cb7-4cfc-8590-b77febc8d94b", JSON.stringify(productDetails), {headers}).subscribe();
+    return this.httpClient.post<any[]>(this.baseUrl + `product/${clientId}`, JSON.stringify(productDetails), {headers}).subscribe();
   }
 }
